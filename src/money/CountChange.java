@@ -41,7 +41,7 @@ public class CountChange
         result = "The total value of " +
                 quarters + (quarters != 1 ? " quarters, " : " quarter, ") +
                 dimes + (dimes != 1 ? " dimes, " : " dime, ") +
-                nickels + (nickels != 1 ? " nickels, " : " nickel, ") + "and"+
+                nickels + (nickels != 1 ? " nickels, " : " nickel, ") + "and "+
                 pennies + (pennies != 1 ? " pennies. " : " penny ")+
                 "is $" + round.format(totalVal);
 

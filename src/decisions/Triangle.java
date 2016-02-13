@@ -58,7 +58,7 @@ public class Triangle
         if (!isTriangle)
             result+= "You cannot make a triangle with these sides.";
         else if (a * a + b * b == c * c)
-            result+= "You can make a right scalene triangle with these sides..";
+            result+= "You can make a right scalene triangle with these sides.";
         else if (a == b && a == c)
             result+= "You can make an equilateral triangle with these sides";
         else if (a != b && a != c && b != c)
