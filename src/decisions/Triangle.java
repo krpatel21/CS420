@@ -14,11 +14,11 @@ public class Triangle
         boolean isTriangle;
 
 
-        userEntry = JOptionPane.showInputDialog("Enter first length");
+        userEntry = JOptionPane.showInputDialog("Enter first length.");
         int a = Integer.parseInt(userEntry);
-        userEntry = JOptionPane.showInputDialog("Enter first length");
+        userEntry = JOptionPane.showInputDialog("Enter first length.");
         int b = Integer.parseInt(userEntry);
-        userEntry = JOptionPane.showInputDialog("Enter first length");
+        userEntry = JOptionPane.showInputDialog("Enter first length.");
         int c = Integer.parseInt(userEntry);
 
         int num1 = a;
@@ -55,15 +55,15 @@ public class Triangle
         result+= "\n\n";
 
         if (!isTriangle)
-            result+= "You cannot make a triangle with these sides";
+            result+= "You cannot make a triangle with these sides.";
         else if (a * a + b * b == c * c)
-            result+= "You can make a right scalene triangle with these sides";
+            result+= "You can make a right scalene triangle with these sides..";
         else if (a == b && a == c)
             result+= "You can make an equilateral triangle with these sides";
         else if (a != b && a != c && b != c)
-            result+= "You can make a scalene triangle with these sides";
+            result+= "You can make a scalene triangle with these sides.";
         else
-            result+= "You can make an isosceles triangle with these sides";
+            result+= "You can make an isosceles triangle with these sides.";
 
         JOptionPane.showMessageDialog(null, result, "Results", JOptionPane.PLAIN_MESSAGE);
 

@@ -15,13 +15,13 @@ public class TotalDue
 
         DecimalFormat money = new DecimalFormat("0.00");
 
-        userEntry = JOptionPane.showInputDialog("Enter quantity sold");
+        userEntry = JOptionPane.showInputDialog("Enter quantity sold.");
         quantitySold = Integer.parseInt(userEntry);
 
-        userEntry = JOptionPane.showInputDialog("Enter price each");
+        userEntry = JOptionPane.showInputDialog("Enter price each.");
         priceEach = Double.parseDouble(userEntry);
 
-        userEntry = JOptionPane.showInputDialog("Enter discount rate as a decimal");
+        userEntry = JOptionPane.showInputDialog("Enter discount rate as a decimal.");
         discountRate = Double.parseDouble(userEntry);
 
         totalDueBefore = priceEach * quantitySold;
