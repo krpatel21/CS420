@@ -12,31 +12,22 @@ public class TestMoPmt
     {
         DecimalFormat round = new DecimalFormat("0.00");
 
-        String userEntry;
-        String result;
-
-        double loanAmount;
-        double apr;
-        int years;
+        double loanAmount = 82900;
+        double apr = 0.095;
+        int years = 15;
         double payment;
 
-        userEntry = JOptionPane.showInputDialog("Enter loan amount.");
-        loanAmount = Double.parseDouble(userEntry);
-
-        userEntry = JOptionPane.showInputDialog("Enter APR as a decimal.");
-        apr = Double.parseDouble(userEntry);
-
-        userEntry = JOptionPane.showInputDialog("Enter number of years.");
-        years = Integer.parseInt(userEntry);
+        String result;
 
         payment = MyMethods.moPmt(loanAmount, apr, years);
 
         result = "Loan Amount = $" + round.format(loanAmount);
         result += "\nAPR = " + (apr);
-        result += "\nYears - " + round.format(years);
+        result += "\nYears = " + round.format(years);
         result += "\nMonthly Payment =  " + round.format(payment);
 
-        JOptionPane.showMessageDialog(null, result, "Results", JOptionPane.PLAIN_MESSAGE);
+        System.out.println(result);
+
         System.exit(0);
     }
 }

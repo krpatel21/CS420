@@ -12,15 +12,11 @@ public class TestSphere
     {
         DecimalFormat round = new DecimalFormat("0.00");
 
-        String userEntry;
         String result;
 
-        double radius;
+        double radius = 2.4;
         double volume;
         double area;
-
-        userEntry = JOptionPane.showInputDialog("Enter radius.");
-        radius = Double.parseDouble(userEntry);
 
         volume = MyMethods.sphereVolume(radius);
         area = MyMethods.sphereArea(radius);
@@ -29,7 +25,8 @@ public class TestSphere
         result+= "\nThe volume of the sphere is " + round.format(volume);
         result+= "\nThe area of the sphere is " + round.format(area);
 
-        JOptionPane.showMessageDialog(null, result, "Results", JOptionPane.PLAIN_MESSAGE);
+        System.out.println(result);
+
         System.exit(0);
     }
 }
