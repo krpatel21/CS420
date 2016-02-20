@@ -23,8 +23,8 @@ public class TestMoPmt
 
         result = "Loan Amount = $" + round.format(loanAmount);
         result += "\nAPR = " + (apr);
-        result += "\nYears = " + round.format(years);
-        result += "\nMonthly Payment =  " + round.format(payment);
+        result += "\nYears = " + (years);
+        result += "\nMonthly Payment =  $" + round.format(payment);
 
         System.out.println(result);
 
