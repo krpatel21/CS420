@@ -2,8 +2,6 @@
 package testmymethods;
 
 import mymethods.MyMethods;
-
-import javax.swing.*;
 import java.text.DecimalFormat;
 
 public class TestMoPmt
