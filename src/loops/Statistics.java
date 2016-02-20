@@ -57,13 +57,13 @@ public class Statistics
         }
         else
         {
-            result = "You entered " + counter + " observations.";
+            result = "You entered " + counter + (counter == 1 ? " observation." : " observations.");
             result += "\nThe minimum is " + min + ".";
             result += "\nThe maximum is " + max + ".";
             result += "\nThe sum is " + sum + ".";
             result += "\nThe mean is " + round.format(mean) + ".";
             result += "\n***********";
-            result += "\nYou entered the following observations:";
+            result += "\nYou entered the following" +(counter == 1 ? " observation:" : " observations:");
             result += observation;
         }
         JOptionPane.showMessageDialog(null, result, "Results", JOptionPane.PLAIN_MESSAGE);
