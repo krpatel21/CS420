@@ -1,3 +1,4 @@
+//Kaushal Patel cs420 Spring 2016
 package mymethods;
 
 public class MyMethods
