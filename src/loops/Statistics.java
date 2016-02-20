@@ -22,7 +22,7 @@ public class Statistics
     {
         while (!userEntry.equalsIgnoreCase("end"))
         {
-            userEntry = JOptionPane.showInputDialog("Enter observation #" + (counter + 1) + "( or \"end\" to quit)");
+            userEntry = JOptionPane.showInputDialog("Enter observation #" + (counter + 1) + " (or \"end\" to quit)");
             if (userEntry.equalsIgnoreCase("end"))
             {
                 displayResult();
