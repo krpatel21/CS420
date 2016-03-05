@@ -14,5 +14,9 @@ public class TestCurrency
 
         Currency c2 = new Currency();
         System.out.println(c2.isZero());
+
+        c2.setAmounts(10,600);
+        System.out.println(c2.getDollars());
+        System.out.println(c2.getCents());
     }
 }
