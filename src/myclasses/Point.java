@@ -68,4 +68,17 @@ public class Point
     {
         return "(" + x + "," + y + ")";
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o)
+            return true;
+
+        if (!(o instanceof Point))
+            return false;
+
+        Point p = (Point) o;
+
+        return (this.getX() == p.getX() && this.getY() == p.getX());
+    }
 }
