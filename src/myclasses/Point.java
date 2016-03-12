@@ -79,6 +79,6 @@ public class Point
 
         Point p = (Point) o;
 
-        return (this.getX() == p.getX() && this.getY() == p.getX());
+        return x == p.getX() && y == p.getY();
     }
 }

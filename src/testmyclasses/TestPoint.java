@@ -2,12 +2,10 @@ package testmyclasses;
 
 import myclasses.Point;
 
-public class TestPoint
-{
-    public static void main(String[] args)
-    {
-        Point p1 =new Point();
-        Point p2 =new Point(2,1);
+public class TestPoint {
+    public static void main(String[] args) {
+        Point p1 = new Point();
+        Point p2 = new Point(2, 1);
 
         System.out.println(p1);
         System.out.println(p2);
@@ -28,5 +26,11 @@ public class TestPoint
         System.out.println(p2);
         p2.left(2);
         System.out.println(p2);
+
+        Point p3 = new Point(2, 1);
+        System.out.println(p1.equals(p2));
+
+        Object o = new Point(2, 1);
+        System.out.println(o.equals(p3));
     }
 }
