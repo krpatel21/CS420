@@ -32,5 +32,15 @@ public class TestPoint {
 
         Object o = new Point(2, 1);
         System.out.println(o.equals(p3));
+
+        Point p4 = new Point(4,5);
+        Point p5 = p4;
+        System.out.println(p4);
+        System.out.println(p5);
+        System.out.println(p4 == p5);
+        p4.setX(16);
+        System.out.println(p4);
+        System.out.println(p5);
+        System.out.println(p4 == p5);
     }
 }

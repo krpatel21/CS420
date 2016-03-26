@@ -1,6 +1,4 @@
-package testmyclasses;
-
-import myclasses.Point;
+package myclasses;
 
 public class Segment
 {

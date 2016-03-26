@@ -90,6 +90,7 @@ public class Point2 implements Cloneable
         }
         catch (CloneNotSupportedException e)
         {
+            System.err.println(e);
             return null;
         }
     }
