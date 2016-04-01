@@ -11,6 +11,7 @@ public class TestBankAcct
         ChkgAcct c = new ChkgAcct(222,500);
         ChkgAcct c2 = new ChkgAcct(333,600);
 
+        System.out.println("Beginning balances:");
         System.out.println(s);
         System.out.println(c);
         System.out.println(c2);
