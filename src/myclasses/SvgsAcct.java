@@ -22,7 +22,7 @@ public class SvgsAcct extends BankAcct
     @Override
     public void monthEnd()
     {
-        double interest = this.getBalance() * interestRate / 12;
-        this.setBalance(this.getBalance()+interest);
+        double interest = this.getBalance() * interestRate / 12.0;
+        this.setBalance(this.getBalance() + interest);
     }
 }

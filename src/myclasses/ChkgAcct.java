@@ -41,9 +41,18 @@ public class ChkgAcct extends BankAcct
         super(acctNbr, balance);
     }
 
+    public void withdraw(double amount)
+    {
+        this.setBalance(this.getBalance() - amount);
+        setNbrOfChecks(getNbrOfChecks() + 1);
+    }
+
     @Override
     public void monthEnd()
     {
-
+        double balance = getBalance();
+        double monthlyFee = getMonthlyFee() + (getPerCheckFee() * getNbrOfChecks());
+        setBalance(balance - monthlyFee);
+        nbrOfChecks = 0;
     }
 }
