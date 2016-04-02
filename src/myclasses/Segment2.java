@@ -52,8 +52,8 @@ public class Segment2 implements Cloneable
         try
         {
             Segment2 cloned = (Segment2) super.clone();
-            cloned.p1 = p1.clone();
-            cloned.p2 = p2.clone();
+            cloned.p1 = (Point2)p1.clone();
+            cloned.p2 = (Point2)p2.clone();
             return cloned;
         }
         catch (CloneNotSupportedException e)
