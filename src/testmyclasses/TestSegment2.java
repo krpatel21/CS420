@@ -31,6 +31,8 @@ public class TestSegment2
         System.out.println(ab.equals(ae));
         Segment2 az = ab.clone();
         System.out.println(az.equals(ab));
+        System.out.println(ab);
+        System.out.println(az);
     }
 }
 

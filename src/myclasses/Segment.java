@@ -43,8 +43,8 @@ public class Segment
 
         Segment s = (Segment) o;
 
-        return this.p1.equals(s) &&
-               this.p2.equals(s);
+        return this.p1.equals(s.p1) &&
+               this.p2.equals(s.p2);
     }
 }
 

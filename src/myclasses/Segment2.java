@@ -43,8 +43,8 @@ public class Segment2 implements Cloneable
 
         Segment2 s = (Segment2) o;
 
-        return this.p1.equals(s) &&
-               this.p2.equals(s);
+        return this.p1.equals(s.p1) &&
+               this.p2.equals(s.p2);
     }
 
     public Segment2 clone()
