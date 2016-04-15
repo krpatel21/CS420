@@ -16,7 +16,7 @@ public class Ladder
 
     public void stepUp() throws TopOfLadderException
     {
-        if (currentRung == 4){
+        if (currentRung == topRung){
             throw new TopOfLadderException();
         }
         else
