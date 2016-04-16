@@ -9,10 +9,12 @@ import java.util.Scanner;
 public class TestLadder
 {
     public static void main(String[] args) {
+
         Ladder l = new Ladder();
         System.out.println("Step (U)p, Step (D)own, or (Q)uit?");
         Scanner input = new Scanner(System.in);
         String selection = input.nextLine();
+
         while (!selection.equalsIgnoreCase("q"))
         {
             if (selection.equalsIgnoreCase("u"))
